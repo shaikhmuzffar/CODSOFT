@@ -4,7 +4,7 @@ import React from 'react'
 import playButton from '../assets/playButton.png'
 
 //components
-import SectionTitle from '../Ui components/SectionTitle'
+import SectionTitle from '../Ui components/SectionTitle6'
 
 // data
 const servicesData = [

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 // component
 import Button from '../Ui components/Button'
-import SectionTitle from '../Ui components/SectionTitle'
+import SectionTitle from '../Ui components/SectionTitle6'
 
 
 

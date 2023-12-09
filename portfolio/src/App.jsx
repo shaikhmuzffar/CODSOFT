@@ -6,6 +6,8 @@ import Hero from './components/Hero'
 import Partners from './components/Partners'
 import About from './components/About'
 import Services from './components/Services'
+import Projects from './components/Projects'
+import Features from './components/Features'
 
 function App() {
 
@@ -20,8 +22,13 @@ function App() {
         <About />
       </section>
       <section className='w-10/12 mx-auto ' >
-        <Services/>
+        <Services />
+        <Projects />
       </section>
+      <section className='bg-[#F4F5F6] mt-[120px] bg-opacity-50' >
+        <Features />
+      </section>
+
 
     </>
   )
