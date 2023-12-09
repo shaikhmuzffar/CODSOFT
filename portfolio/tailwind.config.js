@@ -10,7 +10,8 @@ export default {
         textBlack: '#151619',
         myBlue:'#2B67E9',
         myPurple:'#B15EFF',
-        myOrange:'#FF6000'
+        myOrange:'#FF6000',
+        myPink:'#F31559',
       },
       fontFamily: {
         mulish: ['Mulish', 'sans-serif'],
