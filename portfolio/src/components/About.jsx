@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
+
+// component
+import Button from '../Ui components/Button'
 import SectionTitle from '../Ui components/SectionTitle'
+
+
 
 // images
 import aboutImg from '../assets/aboutImg.png'
@@ -9,6 +14,7 @@ import certificationIcon from '../assets/certificationIcon.png'
 import skillsIcon from '../assets/skillsIcon.png'
 import arrowDown from '../assets/arrowDown.png'
 import arrowRight from '../assets/arrowRight.png'
+import resumeIcon from '../assets/resumeIcon.png'
 
 // aboutData
 const aboutData = [
@@ -128,9 +134,9 @@ export default function About() {
         <section className='w-10/12 mx-auto py-8 font-mulish text-black' >
             <SectionTitle subTitle={'About Me'} />
             {/* aboutBody */}
-            <div className='grid grid-cols-12  gap-x-[60px] border' >
+            <div className='grid grid-cols-12 mt-11 items-start gap-x-[60px] ' >
                 {/* aboutInfo  */}
-                <div className='col-span-5' >
+                <div className='col-span-6' >
                     {/* inforows */}
                     <div className='space-y-3'>
                         {
@@ -176,10 +182,18 @@ export default function About() {
                     
                 </div>
 
-
                 {/* aboutImg */}
-                <div className='col-span-5 border'>
-                    <img src={aboutImg} className='h-[555px] w-full object-contain' alt="" />
+                <div className='col-span-6 '>
+                    <img src={aboutImg} className='h-[450px] w-full object-contain' alt="aboutImg" />
+                    {/* file download */}
+                    <div className='flex flex-col mt-5 items-center space-y-5 justify-center '>
+                        <div className='flex items-center px-5 py-3 w-fit rounded-lg space-x-3 bg-myPurple'>
+                            <span className='text-white font-bold'>My Resume</span>
+                            <div className='h-4 w-[1px] bg-white' ></div>
+                            <img src={resumeIcon} className='h-4 w-4 object-contain' alt="resumeIcon" />
+                        </div>
+                        <p className='text-sm opacity-90'>click above to <span className='font-extrabold' >Download</span> my Resume</p>
+                    </div>
                 </div>
             </div>
         </section >
