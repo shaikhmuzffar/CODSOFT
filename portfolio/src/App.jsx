@@ -10,6 +10,8 @@ import Projects from './components/Projects'
 import Features from './components/Features'
 import SectionTitle from './Ui components/SectionTitle2'
 import Blogs from './components/Blogs'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -32,6 +34,8 @@ function App() {
       </section>
       <section className='w-10/12 mx-auto ' >
         <Blogs/>
+        <Contact/>
+        <Footer/>
       </section>
 
 
