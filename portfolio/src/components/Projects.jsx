@@ -38,6 +38,7 @@ const projectsData = [
 
 const categories = projectsData.map(({ category }) => category)
 const uniqueCategories = [...new Set(categories)];
+uniqueCategories.push('Backend','FullStack')
 
 
 export default function Projects() {

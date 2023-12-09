@@ -12,6 +12,7 @@ import SectionTitle from './Ui components/SectionTitle2'
 import Blogs from './components/Blogs'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Copyright from './components/Copyright'
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
         <Blogs/>
         <Contact/>
         <Footer/>
+        <Copyright/>
       </section>
 
 
