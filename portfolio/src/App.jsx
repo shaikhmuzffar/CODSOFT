@@ -8,6 +8,8 @@ import About from './components/About'
 import Services from './components/Services'
 import Projects from './components/Projects'
 import Features from './components/Features'
+import SectionTitle from './Ui components/SectionTitle2'
+import Blogs from './components/Blogs'
 
 function App() {
 
@@ -28,6 +30,10 @@ function App() {
       <section className='bg-[#F4F5F6] mt-[120px] bg-opacity-50' >
         <Features />
       </section>
+      <section className='w-10/12 mx-auto ' >
+        <Blogs/>
+      </section>
+
 
 
     </>

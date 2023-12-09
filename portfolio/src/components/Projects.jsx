@@ -8,6 +8,7 @@ import farmFreshImg from '../assets/farmFreshImg.png'
 import githubOutlined from '../assets/githubOutlined.png'
 import arrowCross from '../assets/arrowCross.png'
 
+
 const projectsData = [
     {
         title: 'Doruko',
@@ -86,6 +87,7 @@ export default function Projects() {
                     ))}
 
                 </div>
+
             </div>
         </section>
     )
