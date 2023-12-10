@@ -183,7 +183,7 @@ export default function About() {
                 </div>
 
                 {/* aboutImg */}
-                <div className='col-span-12 md:col-span-6 lg:col-span-6 '>
+                <div className='col-span-12 md:hidden lg:col-span-6 '>
                     <img src={aboutImg} className='h-[380px] md:h-[450px]  w-full  object-contain' alt="aboutImg" />
                     {/* file download */}
                     <div className='flex flex-col sm:mt-5 items-center space-y-5 justify-center '>

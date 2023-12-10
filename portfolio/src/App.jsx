@@ -30,10 +30,10 @@ function App() {
         <About />
       </section>
 
-      {/* <section className='w-10/12 mx-auto ' >
+      <section className='w-10/12 mx-auto ' >
         <Services />
-        <Projects />
-      </section> */}
+        {/* <Projects /> */}
+      </section>
 
       {/* <section className='bg-[#F4F5F6] mt-[120px] bg-opacity-50' >
         <Features />
