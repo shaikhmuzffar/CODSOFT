@@ -131,17 +131,17 @@ const aboutData = [
 export default function About() {
     const [visibleDetails,setVisibleDetails]= useState('')
     return (
-        <section className='w-10/12 mx-auto py-8 font-mulish text-black' >
+        <section className='w-10/12 mx-auto  py-8 font-mulish text-black' >
             <SectionTitle subTitle={'About Me'} />
             {/* aboutBody */}
-            <div className='grid grid-cols-12 mt-11 items-start gap-x-[60px] ' >
+            <div className='grid grid-cols-12 mt-11 items-start gap-y-[45px] sm:gap-y-[60px] md:gap-x-[90px] ' >
                 {/* aboutInfo  */}
-                <div className='col-span-6' >
+                <div className='col-span-12 md:col-span-6 lg:col-span-6' >
                     {/* inforows */}
-                    <div className='space-y-3'>
+                    <div className='space-y-3 w-full'>
                         {
                             aboutData.map(({ title, icon, data }) => (
-                                <div className='space-y-3' key={title}>
+                                <div className='space-y-3 w-full' key={title}>
                                     {/* titleRow 1 */}
                                     <div onClick={()=>{
                                         if(visibleDetails){
@@ -159,11 +159,11 @@ export default function About() {
                                     </div>
                                     {/* detailRow */}
                                     {visibleDetails==title?
-                                        <div  className='px-4 py-4 bg-white rounded-xl'>
+                                        <div  className='px-3 py-3 sm:px-4 sm:py-4 bg-white rounded-xl'>
                                         {data.map(({ key, pair,link }) => (
-                                            <div className='flex text-sm pl-5 py-2' key={key}>
+                                            <div className='flex flex-wrap gap-y-2 text-sm pl-5 py-2' key={key}>
                                                 {/* detailRow */}
-                                               {key && <p className='font-extrabold opacity-40 w-[120px]'>{key}</p>}
+                                               {key && <p className='font-extrabold opacity-40 w-[90px] sm:w-[120px]'>{key}</p>}
                                                {link
                                                ?<span className='font-extrabold opacity-80 text-myBlue underline underline-offset-1 '>{pair}</span>
                                                :<span className='font-extrabold opacity-80'>{pair}</span>
@@ -183,10 +183,10 @@ export default function About() {
                 </div>
 
                 {/* aboutImg */}
-                <div className='col-span-6 '>
-                    <img src={aboutImg} className='h-[450px] w-full object-contain' alt="aboutImg" />
+                <div className='col-span-12 md:col-span-6 lg:col-span-6 '>
+                    <img src={aboutImg} className='h-[380px] md:h-[450px]  w-full  object-contain' alt="aboutImg" />
                     {/* file download */}
-                    <div className='flex flex-col mt-5 items-center space-y-5 justify-center '>
+                    <div className='flex flex-col sm:mt-5 items-center space-y-5 justify-center '>
                         <div className='flex items-center px-5 py-3 w-fit rounded-lg space-x-3 bg-myPurple'>
                             <span className='text-white font-bold'>My Resume</span>
                             <div className='h-4 w-[1px] bg-white' ></div>

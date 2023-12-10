@@ -26,9 +26,9 @@ function App() {
         <Partners />
       </section>
     
-      {/* <section className='bg-[#F4F5F6] mt-[120px] bg-opacity-50' >
+      <section className='bg-[#F4F5F6] mt-[120px] bg-opacity-50' >
         <About />
-      </section> */}
+      </section>
 
       {/* <section className='w-10/12 mx-auto ' >
         <Services />
