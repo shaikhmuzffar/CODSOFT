@@ -37,11 +37,11 @@ export default function Navbar() {
         ]
 
     return (
-        <section className='h-[60px] md:h-[90px] w-10/12 mx-auto  ' >
+        <section className='h-[70px] sm:h-[90px] md:h-[90px] w-10/12 mx-auto  ' >
             <div className=' flex justify-between items-center h-full'>
                 {/* logo */}
                 <img className='hidden md:block md:h-10 md:w-[120px] lg:h-17 lg:w-[170px] object-contain' src={Logo} alt="" />
-                <img className='h-[30px] w-[120px] md:hidden object-contain' src={LogoWhite} alt="" />
+                <img className='h-8 w-[120px] sm:h-12 sm:w-[160px]   md:hidden object-contain' src={LogoWhite} alt="" />
 
                 {/* navigation */}
 
@@ -65,7 +65,7 @@ export default function Navbar() {
                 {/* hamburger icon */}
                 <div className='md:hidden' >
                 {hamMenu?<img className='h-5 w-5 object-contain' src={cross} alt="cross" onClick={()=>setHamMenu(false)} />
-                    :<img className='h-5 w-5 object-contain' src={hamburger} alt="cross" onClick={()=>setHamMenu(true)} />  }
+                    :<img className='h-5 w-5 sm:h-6 sm:w-6 object-contain' src={hamburger} alt="cross" onClick={()=>setHamMenu(true)} />  }
                     </div>
             </div>
         </section>
