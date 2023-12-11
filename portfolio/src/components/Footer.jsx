@@ -18,15 +18,15 @@ export default function Footer() {
     return (
         <section className='mt-[120px] font-mulish text-textBlack' >
             {/* footer columns */}
-            <div className='grid grid-cols-12 gap-5 capitalize ' >
+            <div className='grid grid-cols-12 gap-10 md:gap-5 capitalize ' >
                 {/* footer column */}
-                <div className='col-span-4'>
+                <div className='col-span-12 sm:col-span-6 md:col-span-4'>
                     <img src={logo} className='h-10' alt="" />
                     <p className='opacity-70 mt-6 leading-8' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.</p>
                 </div>
 
                 {/* links */}
-                <div className='col-span-2' >
+                <div className='col-span-12 sm:col-span-6 md:col-span-2' >
                     <h1 className='font-bold opacity-90' >Navigation</h1>
                     <ul className='space-y-4 mt-8'>
                         <li className='font-sembold text-sm opacity-70 hover:opacity-90 transition duration-100 ease-in cursor-pointer'>Home</li>
@@ -37,7 +37,7 @@ export default function Footer() {
                 </div>
 
                 {/* links */}
-                <div className='col-span-2' >
+                <div className='col-span-12 sm:col-span-6 md:col-span-2' >
                     <h1 className='font-bold opacity-90' >Showcase</h1>
                     <ul className='space-y-4 mt-8'>
                         <li className='font-sembold text-sm opacity-70 hover:opacity-90 transition duration-100 ease-in cursor-pointer'>Behance</li>
@@ -48,7 +48,7 @@ export default function Footer() {
                 </div>
 
                 {/* contact */}
-                <div className='col-span-4'>
+                <div className='col-span-12 sm:col-span-6  md:col-span-4'>
                     <div className='space-y-5'>
                         <h1 className='font-bold opacity-90'>join news letter </h1>
                         <p className='font-sembold text-sm leading-7 opacity-70' >subscribe our newsletter to get updates of my latest work and trending art.</p>
