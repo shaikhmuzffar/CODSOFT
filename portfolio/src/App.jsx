@@ -35,9 +35,9 @@ function App() {
         <Projects />
       </section>
 
-      {/* <section className='bg-[#F4F5F6] mt-[120px] bg-opacity-50' >
+      <section className='bg-[#F4F5F6] mt-[120px] bg-opacity-50' >
         <Features />
-      </section> */}
+      </section>
 
       {/* <section className='w-10/12 mx-auto ' >
         <Blogs/>

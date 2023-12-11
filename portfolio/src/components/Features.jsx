@@ -38,9 +38,9 @@ export default function Features() {
             <SectionTitle title="what great values i'ill bring to you?" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsam!" />
 
             {/* cards */}
-            <div className='grid grid-cols-12 gap-16 mt-[60px]' >
+            <div className='grid grid-cols-4 md:grid-cols-12 gap-10 md:gap-5 lg:gap-10 mt-[90px]' >
                 {featuresData.map(({ title, icon, para }) => (
-                    <div key={title} className='flex gap-6 flex-col px-9 justify-center items-center col-span-4 h-[400px] bg-white rounded-lg hover:shadow-xl transition duration-200 ease-in cursor-pointer' >
+                    <div key={title} className=' col-span-4 mx-5 sm:mx-10 md:mx-0  px-9 md:px-5 lg:px-9 flex gap-6 flex-col  justify-center items-center h-[400px] bg-white rounded-lg hover:shadow-xl transition duration-200 ease-in cursor-pointer' >
                         <img src={icon} className='h-[60px] w-[60px] object-contain' alt="" />
                         <div className='space-y-4 text-center' >
                             <h1 className='text-base  font-bold opacity-90 tracking-wider ' >{title}</h1>
@@ -52,7 +52,7 @@ export default function Features() {
 
 
             {/* arrows  */}
-            <div className='flex items-center justify-center gap-11 mt-[60px]'>
+            <div className='hidden md:flex items-center justify-center gap-11 mt-[60px]'>
                 <img src={arrowLongLeft} className='h-4 opacity-25 hover:opacity-50 transition duration-200 ease-in cursor-pointer' alt="arrowLongLeft" />
                 <img src={arrowLongRight} className='h-4 opacity-25 hover:opacity-50 transition duration-200 ease-in cursor-pointer' alt="arrowLongRight" />
             </div>

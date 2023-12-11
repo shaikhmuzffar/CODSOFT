@@ -134,7 +134,7 @@ export default function About() {
         <section className='w-10/12 mx-auto  py-8 font-mulish text-black' >
             <SectionTitle subTitle={'About Me'} />
             {/* aboutBody */}
-            <div className='grid grid-cols-12 mt-11 items-start gap-y-[45px] sm:gap-y-[60px] md:gap-x-[90px] ' >
+            <div className='grid grid-cols-12 mt-11 items-start gap-y-[45px] sm:gap-y-[60px]  ' >
                 {/* aboutInfo  */}
                 <div className='col-span-12 md:col-span-6 lg:col-span-6' >
                     {/* inforows */}
@@ -183,8 +183,8 @@ export default function About() {
                 </div>
 
                 {/* aboutImg */}
-                <div className='col-span-12 md:hidden lg:col-span-6 '>
-                    <img src={aboutImg} className='h-[380px] md:h-[450px]  w-full  object-contain' alt="aboutImg" />
+                <div className='col-span-12  md:col-span-6 '>
+                    <img src={aboutImg} className='h-[380px] md:h-[400px]   w-full  object-contain' alt="aboutImg" />
                     {/* file download */}
                     <div className='flex flex-col sm:mt-5 items-center space-y-5 justify-center '>
                         <div className='flex items-center px-5 py-3 w-fit rounded-lg space-x-3 bg-myPurple'>
