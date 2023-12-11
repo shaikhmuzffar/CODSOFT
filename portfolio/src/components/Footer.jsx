@@ -16,13 +16,13 @@ const footerLinks = [
 
 export default function Footer() {
     return (
-        <section className='mt-[120px] font-mulish text-textBlack' >
+        <section className='mt-[120px] font-mulish text-textBlack  overflow-hidden md:overflow-visible' >
             {/* footer columns */}
             <div className='grid grid-cols-12 gap-10 md:gap-5 capitalize ' >
                 {/* footer column */}
                 <div className='col-span-12 sm:col-span-6 md:col-span-4'>
                     <img src={logo} className='h-10' alt="" />
-                    <p className='opacity-70 mt-6 leading-8' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.</p>
+                    <p className='opacity-70 mt-6 leading-8 w-8/12 md:w-full' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.</p>
                 </div>
 
                 {/* links */}
@@ -51,7 +51,7 @@ export default function Footer() {
                 <div className='col-span-12 sm:col-span-6  md:col-span-4'>
                     <div className='space-y-5'>
                         <h1 className='font-bold opacity-90'>join news letter </h1>
-                        <p className='font-sembold text-sm leading-7 opacity-70' >subscribe our newsletter to get updates of my latest work and trending art.</p>
+                        <p className='font-semibold  w-8/12 md:w-full  text-sm leading-7 opacity-70 ' >subscribe our newsletter to get updates of my latest work and trending art.</p>
                     </div>
                     {/* input form  */}
                     <div className='mt-8 flex pl-[10px] pr-[6px] py-[6px] rounded-lg border-2 border-myPurple w-fit' >

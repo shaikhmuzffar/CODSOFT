@@ -43,7 +43,7 @@ function App() {
         <Blogs/>
         <Contact/>
         <Footer/>
-        {/* <Copyright/> */}
+        <Copyright/>
       </section>
 
 
