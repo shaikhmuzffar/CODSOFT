@@ -39,12 +39,12 @@ function App() {
         <Features />
       </section>
 
-      {/* <section className='w-10/12 mx-auto ' >
+      <section className='w-10/12 mx-auto ' >
         <Blogs/>
-        <Contact/>
+        {/* <Contact/>
         <Footer/>
-        <Copyright/>
-      </section> */}
+        <Copyright/> */}
+      </section>
 
 
 
