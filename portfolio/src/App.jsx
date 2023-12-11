@@ -41,9 +41,9 @@ function App() {
 
       <section className='w-10/12 mx-auto ' >
         <Blogs/>
-        {/* <Contact/>
-        <Footer/>
-        <Copyright/> */}
+        <Contact/>
+        {/* <Footer/> */}
+        {/* <Copyright/> */}
       </section>
 
 
