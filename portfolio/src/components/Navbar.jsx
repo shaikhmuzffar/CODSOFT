@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 // images
 import Logo from '../assets/logo.png'
-import LogoWhite from '../assets/LogoWhite.png'
+import LogoWhite from '../assets/logowhite.png'
 import hamburger from '../assets/hamburger.png'
 import cross from '../assets/cross.png'
 
