@@ -152,10 +152,10 @@ export default function About() {
 
                                         }} className='flex justify-between px-4 py-4 rounded-xl bg-white items-center'>
                                         <div className='flex items-center gap-8'>
-                                            <img className='h-[40px] w-[40px] object-contain' src={icon} alt="" />
+                                            <img className={`h-[40px] w-[40px] object-contain  `} src={icon} alt="" />
                                             <h1 className='text-xl font-bold'>{title}</h1>
                                         </div>
-                                        <img className='h-5 w-3 object-contain' src={arrowRight} alt="" />
+                                        <img className={`h-5 w-3 object-contain ${visibleDetails==title?"rotate-90":"rotate-0"}`} src={arrowRight} alt="" />
                                     </div>
                                     {/* detailRow */}
                                     {visibleDetails==title?

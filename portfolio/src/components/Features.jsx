@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionTitle from '../Ui components/SectionTitle2'
+import SectionTitle from '../Ui components/SectionTitle1'
 
 // image
 import backendIcon from '../assets/backendIcon.png'

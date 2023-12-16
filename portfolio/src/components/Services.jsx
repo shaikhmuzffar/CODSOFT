@@ -1,10 +1,10 @@
 import React from 'react'
 
 // images 
-import playButton from '../assets/playButton.png'
+import servicesImg from '../assets/servicesImg.png'
 
 //components
-import SectionTitle from '../Ui components/SectionTitle6'
+import SectionTitle from '../Ui components/SectionTitle4'
 
 // data
 const servicesData = [
@@ -33,22 +33,21 @@ export default function Services() {
         {/* body  */}
         <div className='grid grid-cols-12 mt-[90px] gap-y-[90px] md:mt-16 font-mulish' >
             {/* services  */}
-            <div className='col-span-12 md:col-span-6 ' >
+            <div className='col-span-12 md:col-span-5 ' >
                <div className='space-y-12 md:space-y-16'>
                  {/* single service  */}
                  {servicesData.map((service,index)=>(
                     <div className='space-y-4'>
                         <p className={`font-bold flex items-center justify-center text-sm w-[45px] h-[28px] rounded-[30px] text-white bg-${service.color}`} >0{index+1}</p>
                         <h1 className='text-xl font-extrabold opacity-90' >{service.title}</h1>
-                        <p  className='w-10/12 leading-7 md:w-9/12 lg:w-7/12 opacity-70' >{service.para}</p>
+                        <p  className='w-10/12 leading-7 md:w-9/12 lg:w-10/12 opacity-70' >{service.para}</p>
                     </div>
                 ))}
                </div>
             </div>
-
             {/* video  */}
-            <div className='col-span-12 md:col-span-6 lg:col-span-5 xl:col-span-4 flex justify-center rounded-2xl md:rounded-[30px] items-center h-[320px] sm:h-[300px] md:h-[500px] bg-[#D0D8E7]' >
-                <img src={playButton} className='h-12 w-12 object-contain' alt="" />
+            <div className='col-span-12 md:col-span-7 ' >
+                <img src={servicesImg} className='h-[350px] sm:h-[400px]  md:h-[600px] w-full object-contain' alt="" />
             </div>
         </div>
     </section>

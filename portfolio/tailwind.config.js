@@ -13,6 +13,9 @@ export default {
         myOrange:'#FF6000',
         myPink:'#F31559',
       },
+      gridColumn: {
+        'span-4h': 'span 4.5 / span 4.5',
+      },
       fontFamily: {
         mulish: ['Mulish', 'sans-serif'],
       },

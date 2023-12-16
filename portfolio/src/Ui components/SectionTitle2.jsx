@@ -1,18 +1,18 @@
 import React from 'react'
 
-// 
-
-export default function SectionTitle({ subTitle, title,para,tSize }) {
+export default function SectionTitle({ subTitle, title,para }) {
   return (
-    <section className='font-mulish  flex flex-col space-y-7 items-center text-center' >
-        {subTitle && <p className='col-span-5 text-xl  font-[800] text-myPurple '>{subTitle}</p>}
-        <div className='col-span-7 text-center  space-y-7 text-textBlack'>
-          {title && (tSize
-          ?<h1 className= 'text-[44px] font-extrabold opacity-90 leading-[60px] md:w-[400px]' >{title}</h1>
-          :<h1 className= 'text-[32px] font-extrabold opacity-90 leading-[44px] md:w-[400px]' >{title}</h1>)}
-          {para && <p className='text-base opacity-70 leading-[28px] md:w-[400px]' >{para}</p>}
+    <section className='font-mulish' >
+      <div className='grid grid-cols-12 space-y-5 md:space-y-0' >
+        <p className='col-span-12  lg:col-span-2 xl:col-span-3  text-xl font-[800] text-myPurple '>{subTitle}</p>
+        {
+            title &&
+        <div className='col-span-12 lg:col-span-10 xl:col-span-9 space-y-5 md:space-y-0 text-textBlack'>
+          <h1 className=' text-[32px] font-extrabold opacity-90' >{title}</h1>
+          <p className='text-base mt-2 opacity-70 leading-[30px]' >{para}</p>
         </div>
-        {/* features */}
+            }
+      </div>
     </section>
   )
 }
