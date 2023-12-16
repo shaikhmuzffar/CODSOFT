@@ -31,7 +31,7 @@ export default function Services() {
         <SectionTitle title="We Provide" para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iusto harum sit magnam cupiditate cum deserunt sapiente ratione dignissimos ducimus." subTitle={'My Services'}  ></SectionTitle>
 
         {/* body  */}
-        <div className='grid grid-cols-12 mt-[90px] gap-y-[90px] md:mt-16 font-mulish' >
+        <div className='grid grid-cols-12 mt-[90px] gap-y-[60px] md:gap-y-[90px] md:mt-16 font-mulish' >
             {/* services  */}
             <div className='col-span-12 md:col-span-5 ' >
                <div className='space-y-12 md:space-y-16'>
@@ -46,9 +46,10 @@ export default function Services() {
                </div>
             </div>
             {/* video  */}
-            <div className='col-span-12 md:col-span-7 ' >
+            <div className='col-span-12  md:col-span-7 ' >
                 <img src={servicesImg} className='h-[350px] sm:h-[400px]  md:h-[600px] w-full object-contain' alt="" />
             </div>
+            
         </div>
     </section>
   )

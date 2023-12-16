@@ -57,7 +57,7 @@ uniqueCategories.push('Backend', 'FullStack')
 
 export default function Projects() {
     const [projectQuantity, setProjectQuantity] = useState(2);
-    console.log(projectQuantity)
+    // console.log(projectQuantity)
     return (
         <section className='mt-[120px] font-mulish text-textBlack ' >
             {/* title */}
