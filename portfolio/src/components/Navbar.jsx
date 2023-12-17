@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 // images
 import Logo from '../assets/logo.png'
-// import LogoWhite from '../assets/logowhite.png'
+import logoW from '../assets/logoW.png'
 import hamburger from '../assets/hamburger.png'
 import cross from '../assets/cross.png'
 
@@ -41,7 +41,7 @@ export default function Navbar() {
             <div className=' flex justify-between items-center h-full'>
                 {/* logo */}
                 <img className='hidden md:block md:h-10 md:w-[120px] lg:h-17 lg:w-[170px] object-contain' src={Logo} alt="" />
-                {/* <img className='h-8 w-[120px] sm:h-12 sm:w-[160px]   md:hidden object-contain' src={LogoWhite} alt="" /> */}
+                <img className='h-8 w-[120px] sm:h-12 sm:w-[160px]   md:hidden object-contain' src={logoW} alt="" />
                 {/* navigation */}
                 <ul className={`${hamMenu?"visible":"invisible"} absolute md:visible md:static z-20 md:z-0 md:flex w-full md:w-fit px-7 md:px-0 py-10 md:py-0 flex-col gap-y-5 top-[60px] md:top-0 left-0  bg-myPurple md:bg-transparent  md:flex-row md:gap-[30px] lg:gap-[60px] transition duration-150 ease-in`}>
                   

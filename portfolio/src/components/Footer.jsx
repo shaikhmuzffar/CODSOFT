@@ -1,7 +1,6 @@
 import React from 'react'
 
 import logo from '../assets/logo.png'
-// import arrowLongright from '../assets/arrowlongrightV2White.png'
 
 const footerLinks = [
     {
