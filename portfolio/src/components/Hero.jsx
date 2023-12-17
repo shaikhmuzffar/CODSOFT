@@ -11,7 +11,7 @@ import twitter from '../assets/twitterSolid.png'
 export default function Hero() {
   return (
     <section className='mt-[90px] md:mt-[120px] font-mulish' >
-      <div className='grid grid-cols-12 gap-y-[45px] sm:gap-y-[80px] md:gap-y-0 ' >
+      <div className='grid grid-cols-12 gap-y-[90px]  sm:gap-y-[80px] md:gap-y-0 ' >
         {/* heroInffo */}
         <div className='col-span-12 md:col-span-6  flex flex-col gap-y-14 sm:gap-y-16 lg:gap-y-16' >
           {/* tagline and title  */}
@@ -52,8 +52,8 @@ export default function Hero() {
 
         </div>
         {/* heroImg  */}
-        <div className='col-span-12  md:col-span-6' >
-          <img className='h-300px]  sm:h-[450px] w-full object-contain' src={heroImg} alt="" />
+        <div className='col-span-12 border md:col-span-6' >
+          <img className='h-300px]  sm:h-[450px] w-full object-cover md:object-contain' src={heroImg} alt="" />
         </div>
       </div>
     </section>
