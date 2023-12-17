@@ -3,10 +3,12 @@ import Button from '../Ui components/Button'
 
 // images 
 import heroImg from '../assets/heroImg.png'
+import heroMobileImg from '../assets/heroMobileImg.png'
 import behance from '../assets/behance.png'
 import instagram from '../assets/instagramSolid.png'
 import linkedIn from '../assets/linkedinSolid.png'
 import twitter from '../assets/twitterSolid.png'
+import resumeIconB from '../assets/resumeIconBlack.png'
 
 export default function Hero() {
   return (
@@ -37,7 +39,11 @@ export default function Hero() {
                   Explore
                 </Button>
               </div>
-              <a className='text-myBlue text-base leading-4 font-bold pb-[2px] border-b-2 border-myBlue border-opacity-70' href="">Download Resume</a>
+              {/* <a className='hidden md:block text-myBlue text-base leading-4 font-bold pb-[2px] border-b-2 border-myBlue border-opacity-70' href="">Download Resume</a> */}
+              <a className='flex gap-2'  href="">
+              <span className='text-textBlack text-base leading-4 font-bold' >Resume</span>
+                <img src={resumeIconB} className='h-4 w-4 object-contain' alt="resumeIcon" />
+                </a>
             </div>
           </div>
 
@@ -52,8 +58,9 @@ export default function Hero() {
 
         </div>
         {/* heroImg  */}
-        <div className='col-span-12 border md:col-span-6' >
-          <img className='h-300px]  sm:h-[450px] w-full object-cover md:object-contain' src={heroImg} alt="" />
+        <div className='col-span-12  md:col-span-6' >
+          <img className='h-300px]  sm:h-[450px] hidden md:block w-full object-contain' src={heroImg} alt="" />
+          <img className='h-300px]  sm:h-[450px] md:hidden w-full object-contain' src={heroMobileImg} alt="" />
         </div>
       </div>
     </section>
