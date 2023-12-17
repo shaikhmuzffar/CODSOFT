@@ -9,7 +9,9 @@ export default {
       colors: {
         textBlack: '#151619',
         myBlue:'#2B67E9',
-        myPurple:'#B15EFF',
+        myPurple:'#7C59D4',
+        // myPurple:'#B15EFF',
+        
         myOrange:'#FF6000',
         myPink:'#F31559',
       },

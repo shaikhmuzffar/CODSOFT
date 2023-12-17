@@ -83,7 +83,7 @@ export default function Blogs() {
 
                                 {/* useractions */}
                                 <div className='h-10 w-10 md:h-12 md:w-14 flex items-center justify-center  rounded-xl bg-gray-100 hover:bg-gray-200 transition duration-200 ease-in cursor-pointer' >
-                                    <img src={arrowCross} className='h-5 w-5 object-contain' alt="githubOutlined" />
+                                    <img src={arrowCross} className='h-3 w-3 md:h-4 md:w-4 object-contain' alt="githubOutlined" />
                                 </div>
                             </div>
 
