@@ -4,10 +4,10 @@ import Button from '../Ui components/Button'
 // images 
 import heroImg from '../assets/heroImg.png'
 import heroMobileImg from '../assets/heroMobileImg.png'
-import behance from '../assets/behance.png'
-import instagram from '../assets/instagramSolid.png'
-import linkedIn from '../assets/linkedinSolid.png'
-import twitter from '../assets/twitterSolid.png'
+import behance from '../assets/behanceSmall.png'
+import instagram from '../assets/instagramSmall.png'
+import linkedIn from '../assets/linkedinSmall.png'
+import twitter from '../assets/twitterSmall.png'
 import resumeIconB from '../assets/resumeIconBlack.png'
 
 export default function Hero() {
@@ -17,7 +17,7 @@ export default function Hero() {
         {/* heroInffo */}
         <div className='col-span-12 md:col-span-6  flex flex-col gap-y-14 sm:gap-y-16 lg:gap-y-16' >
           {/* tagline and title  */}
-          <div className='flex flex-col gap-y-12 sm md:gap-y-11' >
+          <div className='flex flex-col gap-y-12 md:gap-y-11' >
 
             {/* titles and userActions */}
             <div className='flex items-center md:items-start text-center md:text-left  flex-col gap-y-1'>
@@ -40,8 +40,8 @@ export default function Hero() {
                 </Button>
               </div>
               {/* <a className='hidden md:block text-myBlue text-base leading-4 font-bold pb-[2px] border-b-2 border-myBlue border-opacity-70' href="">Download Resume</a> */}
-              <a className='flex gap-2'  href="">
-              <span className='text-textBlack text-base leading-4 font-bold' >Resume</span>
+              <a className='flex gap-2 opacity-75 hover:opacity-100 transition duration-200 ease-in'  href="">
+              <span className='text-textBlack text-base leading-4 font-bold cursor-pointer ' >Resume</span>
                 <img src={resumeIconB} className='h-4 w-4 object-contain' alt="resumeIcon" />
                 </a>
             </div>
@@ -49,10 +49,10 @@ export default function Hero() {
 
           {/* socialMedia */}
           <div className='flex justify-center md:justify-start gap-x-8'>
-            <img src={twitter} className="h-5 w-5 object-contain opacity-25 hover:opacity-50 transition duration-300 ease-in cursor-pointer " alt="twitter" />
-            <img src={instagram} className="h-5 w-5 object-contain opacity-25 hover:opacity-50 transition duration-300 ease-in cursor-pointer" alt="twitter" />
-            <img src={linkedIn} className="h-5 w-5 object-contain opacity-25 hover:opacity-50 transition duration-300 ease-in cursor-pointer" alt="twitter" />
-            <img src={behance} className="h-5 w-5 object-contain opacity-25 hover:opacity-50 transition duration-300 ease-in cursor-pointer" alt="twitter" />
+            <img src={twitter} className="h-5 w-5 object-contain opacity-25 hover:opacity-75 transition duration-300 ease-in cursor-pointer " alt="twitter" />
+            <img src={instagram} className="h-5 w-5 object-contain opacity-25 hover:opacity-75 transition duration-300 ease-in cursor-pointer" alt="twitter" />
+            <img src={linkedIn} className="h-5 w-5 object-contain opacity-25 hover:opacity-75 transition duration-300 ease-in cursor-pointer" alt="twitter" />
+            <img src={behance} className="h-5 w-5 object-contain opacity-25 hover:opacity-75 transition duration-300 ease-in cursor-pointer" alt="twitter" />
           </div>
 
 
