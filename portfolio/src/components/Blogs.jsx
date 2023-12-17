@@ -45,10 +45,12 @@ export default function Blogs() {
                 {/* blank div for adustment */}
                 <div className='col-span-2 hidden lg:block'></div>
                 {/* submenu */}
-                <ul className='col-span-10 flex gap-x-[45px] text-sm ' >
-                    <li className='px-3 py-[3px] text-white bg-black rounded-full cursor-pointer whitespace-nowrap' >Web Development</li>
-                    <li className='cursor-pointer opacity-90' >Trends</li>
-                    <li className='cursor-pointer opacity-90' >Technology</li>
+                <ul className='col-span-10 flex gap-x-[30px] text-sm ' >
+                    {/* <li className='px-3 py-[3px] text-white bg-black rounded-full cursor-pointer whitespace-nowrap' >Web Development</li> */}
+                    {['Web development','Trends', 'Technology'].map(cat=>(
+                    <li className=' px-7 lg:px-0 py-3 lg:py-0 rounded-md  border lg:border-0  bg-white  md:bg-transparent text-textBlack md:text-textBlack capitalize text-sm md:text-lg  whitespace-nowrap font-medium  md:opacity-50 md:hover:opacity-80 cursor-pointer transition duration-150 ease-in ' >{cat}</li>
+                    ))}
+
                 </ul>
 
             </div>
@@ -56,10 +58,10 @@ export default function Blogs() {
             {/* blogs */}
             <div className='mt-[60px] grid grid-cols-12'>
                 {/* dummy div for spacing */}
-                <div className=' hidden lg:block col-span-1 lg:col-span-2 xl:col-span-3'  />
+                <div className=' hidden lg:block col-span-1 lg:col-span-2 xl:col-span-3' />
                 {/* blogs  */}
                 <div className='col-span-12 lg:col-span-10 xl:col-span-9 flex flex-col gap-y-[60px] '>
-                    {blogData.slice(0,blogQuantity).map(({ color, status, title, para, tags, image }) => (
+                    {blogData.slice(0, blogQuantity).map(({ color, status, title, para, tags, image }) => (
                         <div className='grid grid-cols-12 gap-y-5 md:gap-y-0 '>
                             {/* blog img */}
                             <div className='col-span-12 md:col-span-6 lg:col-span-6 h-[250px] sm:h-[300px] md:h-[350px]' >

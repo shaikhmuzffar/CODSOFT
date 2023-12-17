@@ -49,12 +49,12 @@ export default function Navbar() {
                         <li onClick={()=>setHamMenu(false)} className='text-white md:text-textBlack py-2 text-center hover:bg-[#b96eff] md:hover:bg-transparent bg-opacity-25 rounded-lg hover:text-white md:hover:text-[#b96eff]  md:bg-transparent font-mulish text-lg md:text-base font-bold cursor-pointer'>{link}</li>
                     ))}
                     {/* button */}
-                    <li> <button className='h-11 w-full md:w-fit px-8 md:hidden  mt-[30px] bg-white text-myPurple text-base font-semibold rounded-md' >
+                    <li> <button className='h-11 w-full md:w-fit px-8 md:hidden  mt-[30px] bg-white text-myPurple text-base font-bold rounded-md' >
                         Contact
                     </button></li>
                 </ul>
                 {/* button */}
-                <div className='hidden md:block' >
+                <div className='hidden md:block ' >
                     <Button>
                         Contact
                     </Button>
