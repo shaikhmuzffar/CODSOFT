@@ -68,7 +68,7 @@ export default function Projects() {
                 {/* menu  */}
                 <ul className='col-span-12  lg:col-span-2 xl:col-span-3 flex flex-row lg:flex-col  gap-x-5 lg:gap-x-0 md:gap-y-5 overflow-scroll lg:overflow-visible  ' data-simplebar >
                     {
-                        uniqueCategories.map(category => <li className=' px-7 lg:px-0 py-3 lg:py-0 rounded-md  border lg:border-0  bg-textBlack md:bg-transparent text-white md:text-textBlack capitalize text-sm md:text-lg  whitespace-nowrap font-medium  md:opacity-50 md:hover:opacity-80 cursor-pointer transition duration-150 ease-in ' >{category}</li>)
+                        uniqueCategories.map(category => <li className=' px-7 lg:px-0 py-3 lg:py-0 rounded-md  border lg:border-0  bg-white  md:bg-transparent text-textBlack md:text-textBlack capitalize text-sm md:text-lg  whitespace-nowrap font-medium  md:opacity-50 md:hover:opacity-80 cursor-pointer transition duration-150 ease-in ' >{category}</li>)
                     }
                 </ul>
 

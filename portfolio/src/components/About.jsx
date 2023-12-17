@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 // component
-import Button from '../Ui components/Button'
+
 import SectionTitle from '../Ui components/SectionTitle6'
 
 
@@ -131,7 +131,7 @@ const aboutData = [
 export default function About() {
     const [visibleDetails,setVisibleDetails]= useState('')
     return (
-        <section className='w-10/12 mx-auto  py-8 font-mulish text-black' >
+        <section  className='w-10/12 mx-auto  py-8 font-mulish text-black' >
             <SectionTitle subTitle={'About Me'} />
             {/* aboutBody */}
             <div className='grid grid-cols-12 mt-11 items-start gap-y-[45px] sm:gap-y-[60px]  ' >

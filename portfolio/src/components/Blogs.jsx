@@ -20,8 +20,8 @@ const blogData = [
         para: "Craft responsive websites with our guide to mastering design techniques and creating seamless user experiences for all devices.",
         image: blogImg3,
         tags: ["web development", " responsive design"],
-        status: "new",
-        color: "myPink"
+        status: "[#f31559]",
+        color: "green"
     },
     {
         title: "Building Modern Web Applications with React and Redux",
@@ -43,9 +43,9 @@ export default function Blogs() {
             {/* submenu */}
             <div className='grid grid-cols-12 mt-[45px] overflow-scroll md:overflow-visible ' >
                 {/* blank div for adustment */}
-                <div className='col-span-3 hidden lg:block'></div>
+                <div className='col-span-2 hidden lg:block'></div>
                 {/* submenu */}
-                <ul className='col-span-9 flex gap-x-[45px] text-sm ' >
+                <ul className='col-span-10 flex gap-x-[45px] text-sm ' >
                     <li className='px-3 py-[3px] text-white bg-black rounded-full cursor-pointer whitespace-nowrap' >Web Development</li>
                     <li className='cursor-pointer opacity-90' >Trends</li>
                     <li className='cursor-pointer opacity-90' >Technology</li>
@@ -68,17 +68,17 @@ export default function Blogs() {
                             {/* blog info */}
                             <div className='col-span-12  gap-y-5 md:gap-y-0 md:col-span-6 lg:col-span-6 pl-7 flex flex-col justify-between items-start' >
                                 {/* status */}
-                                <span className={`bg-${color} uppercase text-sm tracking-wider font-semibold text-white px-4 py-1 rounded-sm `} >{status}</span>
+                                <span className={`bg-${color} uppercase text-xs md:text-sm tracking-wider font-semibold text-white px-4 py-1 rounded-sm `} >{status}</span>
 
                                 {/* titles */}
                                 <div className='space-y-3 md:space-y-2 ' >
-                                    <h1 className='text-[24px] font-extrabold line-clamp-2 '>{title}</h1>
-                                    <p className='opacity-90 font-bold ' >
+                                    <h1 className='text-xl md:text-2xl font-extrabold line-clamp-2 '>{title}</h1>
+                                    <p className='opacity-90 text-sm md:text-base font-bold ' >
                                         {
                                             tags.join(' ꞏ ')
                                         }
                                     </p>
-                                    <p className='opacity-70 leading-7 line-clamp-2' >{para}</p>
+                                    <p className='opacity-70 text-sm md:text-base leading-7 line-clamp-2' >{para}</p>
                                 </div>
 
                                 {/* useractions */}
