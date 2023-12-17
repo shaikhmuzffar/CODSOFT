@@ -1,7 +1,7 @@
 import React from 'react'
 
 import logo from '../assets/logo.png'
-
+import nlArrow from  '../assets/nlArrow.png'
 const footerLinks = [
     {
         title: "Navigation",
@@ -56,8 +56,7 @@ export default function Footer() {
                     <div className='mt-8 flex pl-[10px] pr-[6px] py-[6px] rounded-lg border-2 border-myPurple w-fit' >
                         <input className='w-[200px] outline-none placeholder:text-sm' type="text" placeholder='enter your email' />
                         <div className='px-3 h-7 flex items-center justify-between rounded-md bg-myPurple'>
-                            {/* <img src={arrowLongright} className='h-[8px]' alt="" /> */}
-                            <span>-x</span>
+                            <img src={nlArrow} className='h-[8px]' alt="" />
                         </div>
                     </div>
                 </div>
